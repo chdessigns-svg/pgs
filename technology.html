@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGS Security — Technology That Strengthens Security</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">PGS<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="control-room.html">Control Room</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-portals">
+            <a href="portals.html" class="btn-portal">Client Portal</a>
+            <a href="portals.html" class="btn-portal primary">Staff Portal</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="industries.html">Industries</a>
+        <a href="services.html">Services</a>
+        <a href="technology.html">Technology</a>
+        <a href="control-room.html">Control Room</a>
+        <a href="about.html">About</a>
+        <a href="portals.html">Portals</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <section id="technology">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-label">Technology That Strengthens Security</div>
+                <h2>Smarter Monitoring. <span class="amber">Stronger Protection.</span></h2>
+                <p>Technology is not an extra layer added after the fact. It is part of how security becomes faster,
+                    smarter, and more accountable.</p>
+            </div>
+            <img class="page-top-image fade-up"
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                alt="Security technology" />
+            <div class="grid-3 fade-up" style="gap: 20px; background: transparent;">
+                <div class="tech-card">
+                    <div class="tech-badge">AI Layer</div>
+                    <h3>AI Video Analytics</h3>
+                    <p>From passive cameras to active detection. Intrusion, loitering, restricted-area breaches,
+                        suspicious parking, occupancy changes, and unusual movement.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Intrusion</span>
+                        <span class="tech-tag">Loitering</span>
+                        <span class="tech-tag">Zone Breach</span>
+                        <span class="tech-tag">Tailgating</span>
+                        <span class="tech-tag">Wrong-Way</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-badge">Detection</div>
+                    <h3>Smart Perimeter Detection</h3>
+                    <p>Detect threats at the boundary, not after the breach. Outer boundaries treated as monitored
+                        security layers for earlier warning.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Fence-Line</span>
+                        <span class="tech-tag">Zone Crossing</span>
+                        <span class="tech-tag">Long-Range</span>
+                        <span class="tech-tag">Remote Edge</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-badge">Access</div>
+                    <h3>Access Control Systems</h3>
+                    <p>Control access with more precision and better accountability. Structured movement rules across
+                        all gates, doors, and restricted areas.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Role-Based</span>
+                        <span class="tech-tag">Visitor Workflows</span>
+                        <span class="tech-tag">Audit Trail</span>
+                        <span class="tech-tag">Temporary</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-badge">Vehicle</div>
+                    <h3>ANPR / Vehicle Intelligence</h3>
+                    <p>See vehicles more clearly and control site movement better. License-plate recognition, approval
+                        logic, and stronger vehicle records.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Plate Recognition</span>
+                        <span class="tech-tag">Banned Vehicles</span>
+                        <span class="tech-tag">Lot Occupancy</span>
+                        <span class="tech-tag">Delivery Control</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-badge">Command</div>
+                    <h3>Control Room Platform</h3>
+                    <p>A unified operating layer for live security management. Surveillance, access, communications,
+                        maps, and incidents in one environment.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Multi-Site</span>
+                        <span class="tech-tag">Live Maps</span>
+                        <span class="tech-tag">Intercom</span>
+                        <span class="tech-tag">Incident Mgmt</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-badge">Aerial</div>
+                    <h3>Drone Monitoring</h3>
+                    <p>Add aerial reach to security operations. Faster visibility over wide, remote, or difficult
+                        terrain for verification before field teams arrive.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Wide-Area</span>
+                        <span class="tech-tag">Remote Verify</span>
+                        <span class="tech-tag">Incident Overwatch</span>
+                        <span class="tech-tag">Route Scan</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-badge">Field</div>
+                    <h3>Patrol Tracking & Workforce Visibility</h3>
+                    <p>Make field activity visible, verifiable, and easier to supervise. Patrols become measurable,
+                        responses more targeted.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Route Discipline</span>
+                        <span class="tech-tag">Checkpoints</span>
+                        <span class="tech-tag">Live Dispatch</span>
+                        <span class="tech-tag">Exceptions</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-badge">Evidence</div>
+                    <h3>Incident Reporting & Evidence</h3>
+                    <p>Organize evidence, build better cases, and improve client reporting. Video, photos, notes, and
+                        access events in one clean record.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Media Attach</span>
+                        <span class="tech-tag">Case Building</span>
+                        <span class="tech-tag">Multi-Site</span>
+                        <span class="tech-tag">Compliance</span>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="contact.html" class="btn btn-primary">Discover Technology ›</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo" style="font-size: 2rem;">PGS<span style="color:var(--amber)">.</span></div>
+                    <p>PGS Security uses technology as part of the protection model, not as an add-on layer.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Pages</h5>
+                    <ul>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="control-room.html">Control Room</a></li>
+                        <li><a href="portals.html">Portals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="https://www.pgssecurity.co.tz">www.pgssecurity.co.tz</a></li>
+                        <li><a href="tel:+255715777700">+255 715 777 700</a></li>
+                        <li><a href="mailto:info@pgssecurity.co.tz">info@pgssecurity.co.tz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Portals</h5>
+                    <ul>
+                        <li><a href="portals.html">Client Portal</a></li>
+                        <li><a href="portals.html">Staff Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PGS Security. All rights reserved. · www.pgssecurity.co.tz</p>
+                <p
+                    style="color: var(--amber); font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em;">
+                    DETECT → VERIFY → CONTROL → RESPOND → RECORD → REPORT</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
