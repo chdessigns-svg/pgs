@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGS Security — Client & Staff Portals</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo"><img src="../logo.png" alt="PGS Logo" style="height:40px;"></a>
+        <ul class="nav-links">
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="control-room.html">Control Room</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-portals">
+            <a href="portals.html" class="btn-portal">Client Portal</a>
+            <a href="portals.html" class="btn-portal primary">Staff Portal</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="industries.html">Industries</a>
+        <a href="services.html">Services</a>
+        <a href="technology.html">Technology</a>
+        <a href="control-room.html">Control Room</a>
+        <a href="about.html">About</a>
+        <a href="portals.html">Portals</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <section id="portals">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-label">Connected Operations</div>
+                <h2>Client & Staff <span class="amber">Portals</span></h2>
+                <p>PGS supports a connected operating model through secure digital portals. Clients gain visibility into
+                    site activity, reporting, and service communication. Staff gain access to shifts, patrol workflows,
+                    incident reporting, and operational updates.</p>
+            </div>
+            <img class="page-top-image fade-up"
+                src="../assets/security-service-operation.jpg"
+                alt="Portal dashboard" />
+            <div class="page-tabs">
+                <button class="page-tab active" onclick="switchTab('client', this)">Client Portal</button>
+                <button class="page-tab" onclick="switchTab('staff', this)">Staff Portal</button>
+            </div>
+            <div class="tab-panel active" id="tab-client">
+                <div class="portal-preview fade-up">
+                    <div class="portal-header">
+                        <div class="portal-dots">
+                            <span class="portal-dot red"></span>
+                            <span class="portal-dot yellow"></span>
+                            <span class="portal-dot green"></span>
+                        </div>
+                        <div class="portal-title">PGS CLIENT PORTAL — pgssecurity.co.tz/portal</div>
+                    </div>
+                    <div class="portal-body">
+                        <div class="portal-sidebar">
+                            <div class="portal-nav-item active">⬛ Dashboard</div>
+                            <div class="portal-nav-item">📍 My Sites</div>
+                            <div class="portal-nav-item">⚠️ Incidents</div>
+                            <div class="portal-nav-item">📄 Reports</div>
+                            <div class="portal-nav-item">👤 Access Activity</div>
+                            <div class="portal-nav-item">🔧 Service Requests</div>
+                            <div class="portal-nav-item">📁 Documents</div>
+                        </div>
+                        <div class="portal-main">
+                            <div
+                                style="font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em; color: var(--mid); margin-bottom: 16px; text-transform: uppercase;">
+                                Client Dashboard — Overview</div>
+                            <div class="portal-widgets">
+                                <div class="portal-widget">
+                                    <div class="widget-label">Active Sites</div>
+                                    <div class="widget-val ok">3</div>
+                                </div>
+                                <div class="portal-widget">
+                                    <div class="widget-label">Open Incidents</div>
+                                    <div class="widget-val warn">2</div>
+                                </div>
+                                <div class="portal-widget">
+                                    <div class="widget-label">Patrols Today</div>
+                                    <div class="widget-val ok">12</div>
+                                </div>
+                            </div>
+                            <div
+                                style="background: var(--charcoal); border: 1px solid var(--border); padding: 16px; margin-top: 8px;">
+                                <div
+                                    style="font-family: 'Space Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; color: var(--amber); margin-bottom: 12px; text-transform: uppercase;">
+                                    Recent Activity</div>
+                                <div
+                                    style="font-size: 0.8rem; color: var(--mid); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 10px;">
+                                    Gate breach — Site Alpha · 14:32 · <span style="color: var(--amber);">Under
+                                        Review</span></div>
+                                <div
+                                    style="font-size: 0.8rem; color: var(--mid); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 10px;">
+                                    Patrol completed — Main Perimeter · 13:05 · <span
+                                        style="color: #27ae60;">Verified</span></div>
+                                <div style="font-size: 0.8rem; color: var(--mid);">Access request — Contractor TZ2291 ·
+                                    12:44 · <span style="color: #27ae60;">Approved</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-3" style="margin-top: 48px; gap: 20px; background: transparent;">
+                    <div class="card">
+                        <div class="card-icon">📍</div>
+                        <h3>My Sites</h3>
+                        <p>View sites under your service arrangement with location-specific updates, activity summaries,
+                            and linked reports.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚠️</div>
+                        <h3>Incidents</h3>
+                        <p>Review open, recent, and closed incidents with summaries, timelines, media, and action notes.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📄</div>
+                        <h3>Reports</h3>
+                        <p>Access incident reports, patrol summaries, and service updates — filter by site, type, or
+                            date.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-panel" id="tab-staff">
+                <div class="portal-preview fade-up">
+                    <div class="portal-header">
+                        <div class="portal-dots">
+                            <span class="portal-dot red"></span>
+                            <span class="portal-dot yellow"></span>
+                            <span class="portal-dot green"></span>
+                        </div>
+                        <div class="portal-title">PGS STAFF PORTAL — pgssecurity.co.tz/staff</div>
+                    </div>
+                    <div class="portal-body">
+                        <div class="portal-sidebar">
+                            <div class="portal-nav-item active">⬛ Dashboard</div>
+                            <div class="portal-nav-item">🕐 My Shifts</div>
+                            <div class="portal-nav-item">🗺️ Patrol Routes</div>
+                            <div class="portal-nav-item">📋 Report Incident</div>
+                            <div class="portal-nav-item">📌 Tasks & SOPs</div>
+                            <div class="portal-nav-item">📢 Notices</div>
+                            <div class="portal-nav-item">👔 Supervisor Tools</div>
+                        </div>
+                        <div class="portal-main">
+                            <div
+                                style="font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em; color: var(--mid); margin-bottom: 16px; text-transform: uppercase;">
+                                Staff Dashboard — Today</div>
+                            <div class="portal-widgets">
+                                <div class="portal-widget">
+                                    <div class="widget-label">Today's Shift</div>
+                                    <div class="widget-val ok">07:00</div>
+                                </div>
+                                <div class="portal-widget">
+                                    <div class="widget-label">Assigned Site</div>
+                                    <div class="widget-val" style="font-size: 1rem; color: var(--amber);">ALPHA</div>
+                                </div>
+                                <div class="portal-widget">
+                                    <div class="widget-label">Tasks Open</div>
+                                    <div class="widget-val warn">3</div>
+                                </div>
+                            </div>
+                            <div
+                                style="background: var(--charcoal); border: 1px solid var(--border); padding: 16px; margin-top: 8px;">
+                                <div
+                                    style="font-family: 'Space Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; color: var(--amber); margin-bottom: 12px; text-transform: uppercase;">
+                                    Patrol Checkpoint Status</div>
+                                <div
+                                    style="font-size: 0.8rem; color: var(--mid); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 10px;">
+                                    Gate A Check · <span style="color: #27ae60;">✓ Completed</span></div>
+                                <div
+                                    style="font-size: 0.8rem; color: var(--mid); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 10px;">
+                                    Perimeter North · <span style="color: var(--amber);">⊙ In Progress</span></div>
+                                <div style="font-size: 0.8rem; color: var(--mid);">Back Fence Line · <span
+                                        style="color: var(--muted);">○ Pending</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo"><img src="../logo.png" alt="PGS Logo" style="height:50px;"></div>
+                    <p>Secure portals keep clients and staff connected with visibility, reporting, and task workflows.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>Pages</h5>
+                    <ul>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="control-room.html">Control Room</a></li>
+                        <li><a href="portals.html">Portals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="https://www.pgssecurity.co.tz">www.pgssecurity.co.tz</a></li>
+                        <li><a href="tel:+255715777700">+255 715 777 700</a></li>
+                        <li><a href="mailto:info@pgssecurity.co.tz">info@pgssecurity.co.tz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Portals</h5>
+                    <ul>
+                        <li><a href="portals.html">Client Portal</a></li>
+                        <li><a href="portals.html">Staff Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PGS Security. All rights reserved. · www.pgssecurity.co.tz</p>
+                <p
+                    style="color: var(--amber); font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em;">
+                    DETECT → VERIFY → CONTROL → RESPOND → RECORD → REPORT</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
