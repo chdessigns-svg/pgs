@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGS Security — Control Room Oversight</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo"><img src="../logo.png" alt="PGS Logo" style="height:40px;"></a>
+        <ul class="nav-links">
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="control-room.html">Control Room</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-portals">
+            <a href="portals.html" class="btn-portal">Client Portal</a>
+            <a href="portals.html" class="btn-portal primary">Staff Portal</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="industries.html">Industries</a>
+        <a href="services.html">Services</a>
+        <a href="technology.html">Technology</a>
+        <a href="control-room.html">Control Room</a>
+        <a href="about.html">About</a>
+        <a href="portals.html">Portals</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <section id="control-room" style="background: var(--charcoal);">
+        <div class="container">
+            <div class="cr-wrap fade-up">
+                <div class="section-label">Command & Evidence Hub</div>
+                <h2>Control Room <span class="amber">Oversight</span></h2>
+                <img class="page-top-image fade-up"
+                    src="../assets/control-room.jpg"
+                    alt="Control room operations" />
+                <p style="max-width: 680px; margin: 20px 0 0;">A modern security operation needs more than field
+                    presence. It needs visibility across events, faster verification, coordinated escalation, and
+                    reliable reporting. PGS uses a control-room-led approach to connect alerts, communications, response
+                    activity, and incident documentation — ensuring security events are handled as part of a structured
+                    operating workflow, not in isolation.</p>
+                <div class="cr-list">
+                    <div class="cr-item">Alert monitoring</div>
+                    <div class="cr-item">Event verification</div>
+                    <div class="cr-item">Response coordination</div>
+                    <div class="cr-item">Communication escalation</div>
+                    <div class="cr-item">Incident timelines</div>
+                    <div class="cr-item">Report generation</div>
+                    <div class="cr-item">Multi-site visibility</div>
+                    <div class="cr-item">Evidence management</div>
+                </div>
+                <p style="margin-top: 36px; color: var(--mid); font-style: italic;">The result is stronger oversight,
+                    faster decision-making, better reporting, and a more accountable security operation.</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 28px;">Request a Control Room Solution
+                    ›</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo"><img src="../logo.png" alt="PGS Logo" style="height:50px;"></div>
+                    <p>The control room is the command layer that connects alert verification, field response, and
+                        incident records.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>Pages</h5>
+                    <ul>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="control-room.html">Control Room</a></li>
+                        <li><a href="portals.html">Portals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="https://www.pgssecurity.co.tz">www.pgssecurity.co.tz</a></li>
+                        <li><a href="tel:+255715777700">+255 715 777 700</a></li>
+                        <li><a href="mailto:info@pgssecurity.co.tz">info@pgssecurity.co.tz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Portals</h5>
+                    <ul>
+                        <li><a href="portals.html">Client Portal</a></li>
+                        <li><a href="portals.html">Staff Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PGS Security. All rights reserved. · www.pgssecurity.co.tz</p>
+                <p
+                    style="color: var(--amber); font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em;">
+                    DETECT → VERIFY → CONTROL → RESPOND → RECORD → REPORT</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
